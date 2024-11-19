@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 300;
+    font-size: calc(40px + 650 * (100vw - 320px) / 7360);
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin: 15px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 250;
+    font-size: calc(23px + 100 * (100vw - 320px) / 7360);
+}
+
+h3 {
+    text-align: center;
+    margin: 0px;
+    font-family: "McLaren", sans-serif;
+    font-weight: 50;
+    font-size: calc(12px + 50 * (100vw - 320px) / 7360);
+}
+
+p {
+    margin: 15px;
+    font-family: "McLaren", sans-serif;
+    font-size: calc(15px + 60 * (100vw - 320px) / 7360);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center; 
+    z-index: 1000; 
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background: rgba(197, 197, 197, 0.1);
+    margin: 15px 0px;
+    padding: 15px 15px;
+    border-radius: 50px;
+  }
+  .nav-links li{
+    list-style: none;
+    margin: 0 9px;
+  }
+  .nav-links li a{
+    position: relative;
+    color: white;
+    font-weight: 500;
+    font-family: "McLaren", sans-serif;
+    font-size: calc(10px + 90 * (100vw - 320px) / 7360);
+    padding: 4px 0;
+    text-decoration: none;
+  }
+  .nav-links li a:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    width: 0%;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+  }
+  .nav-links li a:hover:before{
+    width: 100%;
+  }
+
+
+  
+.start {
+    background: linear-gradient(-40deg, #FFDD95, #CBAAD5, #CDE6A4, #F68B79);
+    background-size: 300% 300%;
+    animation: gradient 15s ease-in-out infinite;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.basic_info{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding: calc(0px + 600 * (100vw - 320px) / 7360);
+}
+
+.my_img {
+   width: calc(250px + 700 * (100vw - 320px) / 7360);
+   margin: 20px;
+}
+
+.abilities_layout {
+    display: flex;
+    padding: 10px;
+}
+
+.abilities {
+    width: 66%;
+    align-items: center;
+}
+
+.abilities_conteiner{
+    display: inline-block;
+    justify-items: center;
+    margin: 25px;
+}
+
+.img_conteiner {
+    display: inline-block;
+    justify-items: center;
+    margin: 15px;
+}
+
+.img_conteiner>img {
+    width: calc(80px + 200 * (100vw - 320px) / 7360);
+    margin: 5px;
+}
+
+.languages {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.language_item {
+    padding: 10px;
+}
+
+.language_item h3{
+    text-align: left;
+}
+
+.language_item img {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.spoty {
+    display: flex;
+    flex-direction: row; 
+}
+
+.spoty>img {
+    width: calc(130px + 500 * (100vw - 320px) / 7360);
+    margin: 20px;
+ }
+
+input{
+    font-family: "McLaren", sans-serif;
+    font-size: calc(15px + 60 * (100vw - 320px) / 7360);
+    padding-inline: 10px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: #D9D9D9;
+    width: 80%; 
+    height: 7vh;
+    margin: 10px;
+}
+
+
+.social_media {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black; 
+}
+.social_media>img {
+    width: calc(40px + 150 * (100vw - 320px) / 7360);
+    margin: 20px;
+}
+
+.contacts {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start;    
+}
+    
+.contacts_conteiner{
+    width: 50vw;
+}
+
+.massage_conteiner {
+    display:flex
+}
+
+.send_button {
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+    border-radius: 10px; 
+    border: none; 
+    background-color: #CDE6A4; 
+    color: white;
+    cursor: pointer; 
+    width: 15%; 
+    height: 7vh;
+    font-family: "McLaren", sans-serif;
+    font-weight: 50;
+    font-size: calc(12px + 50 * (100vw - 320px) / 7360);
+}
+
+
+.interests {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-card {
+    flex: 0 0 calc(100% / 3); 
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(80, 80, 80, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .basic_info {
+        flex-direction: column; 
+        place-items: center;
+    }
+
+    .contacts {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+    
+    .contacts_conteiner{
+        width: 100vw;
+    }
+
+    .social_media {
+        display: inline-flex;
+    }
+
+    .abilities_layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .abilities, .languages {
+        width: 100%;
+        
+    }
+
+    .carousel-card {
+        flex: 0 0 100%; 
+    }
+
+    .spoty {
+        flex-direction: column; 
+        align-items:center
+    }
+
+}
+
+
+
